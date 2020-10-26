@@ -1,0 +1,25 @@
+numpy 支持数学高维矩阵运算
+matplotlib 对numpy支持的绘图
+    from matplotlib import pyplot as plt
+
+ReadAndShowImage.py
+cv2.imread()
+cv2.imshow()
+cv2.imwrite()
+cv2.waitKey()
+cv2.deatroyAllWindows()
+cv2.WINDOW_AUTOSIZE
+cv2.WINDOW_NORMAL
+
+ShowWithPyplot.py
+plt.imshow()
+plt.xticks()
+plt.yticks()
+plt.show()
+
+getVideoFromCamera.py
+cap = cv2.VideoCapture()
+cap.read()
+cv2.cvtColor()
+cv2.COLOR_BGR2GRAY
+cap.release()
