@@ -7,7 +7,7 @@ cv2.imread()
 cv2.imshow()
 cv2.imwrite()
 cv2.waitKey()
-cv2.deatroyAllWindows()
+cv2.destroyAllWindows()
 cv2.WINDOW_AUTOSIZE
 cv2.WINDOW_NORMAL
 
@@ -17,9 +17,91 @@ plt.xticks()
 plt.yticks()
 plt.show()
 
-getVideoFromCamera.py
+GetVideoFromCamera.py
 cap = cv2.VideoCapture()
+cap.isOpened()
+cap.open()
 cap.read()
 cv2.cvtColor()
 cv2.COLOR_BGR2GRAY
 cap.release()
+
+GetVideoData.py
+cap = cv2.VideoCapture()
+cap.get(propId)
+cap.set(propId, )
+
+WriteVideo.py
+cv2.VideoWriter_fourcc(*'XVID')
+out = cv2.VideoWriter()
+out.write()
+out.release()
+
+Draw.py
+np.uint8
+np.zeros()
+cv2.line()
+cv2.rectangle()
+cv2.circle()
+cv2.ellipse()
+pts = np.array()
+np.int32
+pts.reshape()
+cv2.polylines()
+cv2.FONT_HERSHEY_SIMPLEX
+cv2.putText()
+
+DrawWithMouse.py
+cv2.EVENT_LBUTTONDBLCLK
+cv2.setMouseCallback()
+
+Test03.py
+cv2.LBUTTOMDOWN
+cv2.EVENT_MOUSEMOVE
+cv2.EVENT_FLAG_LBUTTON
+cv2.EVENT_LBUTTONUP
+
+TestTrackBar.py
+cv2.createTrackbar()
+cv2.getTrackbarPos()
+
+ImageBasic.py
+img.item()
+img.itemset()
+img.shape
+img.size
+img.dtype
+cv2.split()
+cv2.merge()
+cv2.copyMakeBorder()
+cv2.BORDER_REPLICATE
+cv2.BORDER_REFLECT
+cv2.BORDER_REFLECT_101
+cv2.BORDER_WRAP
+cv2.BORDER_CONSTANT
+plt.subplot()
+plt.title()
+plt.show()
+
+ImageOperation.py
+cv2.add()
+cv2.addWeighted()
+cv2.threshold()
+cv2.THRESH_BINARY
+cv2.THRESH_BINARY_INV
+cv2.THRESH_TRUNC
+cv2.THRESH_TOZERO
+cv2.THRESH_TOZERO_INV
+cv2.bitwise_not()
+cv2.bitwise_and()
+cv2.bitwise_or()
+cv2.bitwise_xor()
+
+Optimization.py
+ cv2.getTickCount()
+cv2.getTickFrequency()
+cv2.useOptimized()
+cv2.setUseOptimized()
+
+Tracking.py
+cv2.inRange()

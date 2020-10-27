@@ -2,7 +2,8 @@ import cv2
 
 # 新建VideoCapture对象, 参数为设备索引号或视频文件, 0为默认摄像头
 cap = cv2.VideoCapture(0)
-# cap = cv2.VideoCapture("feedingCat.mp4")  # 读取视频
+if not cap.isOpened():  # 检测摄像头是否初始化
+    cap.open()  # 若初始化未成功, 打开摄像头
 while True:
     # type(ret) = bool, 如果读取帧正确返回True,如果文件读取到结尾, 返回False
     # frame是三维矩阵, 表示每一帧的图像
