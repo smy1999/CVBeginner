@@ -19,8 +19,8 @@ opencv_logo = cv2.imread('opencv_logo.png')
 desktop = cv2.imread('desktop.jpg')
 
 # 提取desktop中与logo一样啊的部分
-line, row, channel = opencv_logo.shape
-roi = desktop[0:line, 0:row]
+line, column, channel = opencv_logo.shape
+roi = desktop[0:line, 0:column]
 
 opencv_logo_gray = cv2.cvtColor(opencv_logo, cv2.COLOR_BGR2GRAY)
 # 图像二值化, 图像/阈值/当图像大于阈值赋的值/方法, 返回ret阈值/mask矩阵
@@ -32,15 +32,8 @@ ans1 = cv2.bitwise_and(roi, roi, mask=masks)
 ans2 = cv2.bitwise_and(opencv_logo, opencv_logo, mask=masks_inv)
 
 dst = cv2.add(ans1, ans2)
-desktop[0:line, 0:row] = dst
+desktop[0:line, 0:column] = dst
 cv2.imshow('result', desktop)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-"""
-cv2.THRESH_BINARY       大于阈值置255,小于置0
-cv2.THRESH_BINARY_INV   大于阈值置0,小于置255
-cv2.THRESH_TRUNC        大于阈值置阈值,小于不变
-cv2.THRESH_TOZERO       小于阈值置0,大于不变
-cv2.THRESH_TOZERO_INV   大于阈值置0,小于不变
-"""

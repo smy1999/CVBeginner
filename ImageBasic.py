@@ -16,10 +16,10 @@ b = img.item(200, 200, 0)  # 获取某点rgb单一像素值
 print("(200, 200) 的b像素值为" + str(b))
 img.itemset((200, 200, 0), 0)  # 修改
 
-(line, row, channel) = img.shape  # 返回(行/列/通道数)的元组
-print("img ：%d * %d * %d" % (line, row, channel))
-(line, row) = img_gray.shape  # 灰度图像返回(行/列)
-print("img_gray ：%d * %d" % (line, row))
+(row, column, channel) = img.shape  # 返回(行/列/通道数)的元组
+print("img ：%d * %d * %d" % (row, column, channel))
+(row, column) = img_gray.shape  # 灰度图像返回(行/列)
+print("img_gray ：%d * %d" % (row, column))
 s = img.size  # 返回像素数
 print("img.size = " + str(s))
 t = img.dtype  # 返回img的类型
