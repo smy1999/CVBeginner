@@ -147,3 +147,18 @@ cv2.GaussianBlur()
 cv2.medianBlur()
 cv2.bilateralFilter()
 
+Morphology.py
+cv2.erode()
+cv2.dilate()
+cv2.morphologyEx()
+cv2.MORPH_OPEN
+cv2.MORPH_CLOSE
+cv2.MORPH_GRADIENT
+cv2.MORPH_TOPHAT
+cv2.MORPH_BLACKHAT
+cv2.getStructuringElement()
+cv2.MORPH_RECT
+cv2.MORPH_ELLIPSE
+cv2.MORPH_CROSS
+
+
