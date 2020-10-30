@@ -161,4 +161,24 @@ cv2.MORPH_RECT
 cv2.MORPH_ELLIPSE
 cv2.MORPH_CROSS
 
+Gradient.py
+cv2.Laplacian()
+cv2.Sobel()
+cv2.CV_64F
+np.absolute(sobelx64f)
+np.uint8(abs_sobely64f)
+
+Canny.py
+cv2.Canny()
+
+pyramid.py
+cv2.pyrDown()
+cv2.pyrUp()
+
+Contour.py
+cv2.CHAIN_APPROX_SIMPLE
+cv2.CHAIN_APPROX_NONE
+cv2.findContours()
+cv2.drawContours()
+
 
