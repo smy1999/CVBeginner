@@ -7,7 +7,7 @@ import cv2
 
 用于两图融合, 边界处僵硬, 通过金字塔使边界处模糊平滑
 """
-img = cv2.imread('image.jpg')
+img = cv2.imread('../src/image.jpg')
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 # Gaussian Pyramid: 顶部是由底部图像中连续的行和列去除得到的, 顶部图像中每个像素等于下一层五个像素的高斯加权平均

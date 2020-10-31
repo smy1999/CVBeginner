@@ -9,7 +9,7 @@ from matplotlib import pyplot as plt
 4.设置两阈值minVal和maxVal:
   低于minVal的边界抛弃; 高于maxVal的边界保留; 介于两者之间看是否与真正的辩解相连决定是否保留
 """
-img = cv2.imread('image.jpg', 0)
+img = cv2.imread('../src/image.jpg', 0)
 
 # param: 图像/低阈值/高阈值/卷积核大小(默认3)/L2gradient(bool选择计算梯度的方程)
 # True : grad = sqrt(Gx ^ 2 + Gy ^ 2)

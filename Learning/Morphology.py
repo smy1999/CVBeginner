@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 形态学操作根据图像形状进行操作, 一般用于二值化图像
 """
 
-img = cv2.imread('yue_reverse.png', 0)
+img = cv2.imread('../src/yue_reverse.png', 0)
 
 kernel = np.ones((5, 5), np.uint8)  # 构建5*5的卷积核
 

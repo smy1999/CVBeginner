@@ -5,7 +5,7 @@ import cv2
 """
 
 cv2.namedWindow('Client')
-img = cv2.imread('image.jpg')
+img = cv2.imread('../src/image.jpg')
 dst = img
 
 

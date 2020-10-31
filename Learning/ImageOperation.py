@@ -1,9 +1,9 @@
 import cv2
 
-img = cv2.imread('image.jpg')
+img = cv2.imread('../src/image.jpg')
 (b, g, r) = cv2.split(img)
 img_merge = cv2.merge((r, g, b))
-img = cv2.imread('image.jpg')
+img = cv2.imread('../src/image.jpg')
 
 res1 = img + img_merge  # 取模操作 250 + 10 = 260 % 256 = 4
 res2 = cv2.add(img, img_merge)  # 饱和操作 250 + 10 = 260 = 255
@@ -15,8 +15,8 @@ res3 = cv2.addWeighted(img, 0.3, img_merge, 0.7, 100)
 将logo覆盖到图片中
 """
 
-opencv_logo = cv2.imread('opencv_logo.png')
-desktop = cv2.imread('desktop.jpg')
+opencv_logo = cv2.imread('../src/opencv_logo.png')
+desktop = cv2.imread('../src/desktop.jpg')
 
 # 提取desktop中与logo一样啊的部分
 line, column, channel = opencv_logo.shape

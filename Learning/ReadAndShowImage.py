@@ -11,9 +11,9 @@ cv2.namedWindow('window 2', cv2.WINDOW_AUTOSIZE)
 cv2.namedWindow('window 3', cv2.WINDOW_AUTOSIZE)
 
 # 读取图像
-img_default = cv2.imread("image.jpg")  # 彩色
-img0 = cv2.imread("image.jpg", 0)  # 灰度
-img1 = cv2.imread("image.jpg", 1)  # 彩色
+img_default = cv2.imread("../src/image.jpg")  # 彩色
+img0 = cv2.imread("../src/image.jpg", 0)  # 灰度
+img1 = cv2.imread("../src/image.jpg", 1)  # 彩色
 
 # 显示图像
 # 若要在此前窗口打开, 此处窗口应同名
@@ -27,4 +27,4 @@ cv2.waitKey()
 cv2.destroyAllWindows()  # 关闭生成窗口
 
 # 存储图片
-cv2.imwrite('saveLenna.png', img0)
+cv2.imwrite('../src/saveLenna.png', img0)

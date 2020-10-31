@@ -7,7 +7,7 @@ import numpy as np
 2.查找轮廓会修改原图像
 3.轮廓是指黑色背景中的白色物体的轮廓
 """
-img = cv2.imread('graffiti.png')
+img = cv2.imread('../src/graffiti.png')
 img_copy = img.copy()
 img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 ret, thresh = cv2.threshold(img_gray, 200, 255, 0)

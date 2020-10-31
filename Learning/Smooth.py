@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 # 低通滤波LPF去除噪音, 模糊图像
 # 高通滤波HPF找到图像边缘
 
-img = cv2.imread('coin_noise.jpg')
+img = cv2.imread('../src/coin_noise.jpg')
 
 # 1.使用filter2D进行2D卷积
 kernel = np.ones((5, 5), np.float32) / 25  # 构建5*5的平均滤波器核

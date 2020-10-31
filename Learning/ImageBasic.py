@@ -1,8 +1,8 @@
 import cv2
 from matplotlib import pyplot as plt
 
-img = cv2.imread('image.jpg')
-img_gray = cv2.imread('image.jpg', 0)
+img = cv2.imread('../src/image.jpg')
+img_gray = cv2.imread('../src/image.jpg', 0)
 
 bgr = img[200, 200]  # 查看某点像素值
 print("(200, 200) 的像素值为" + str(bgr))
@@ -43,7 +43,7 @@ img[:, :, 2] = 0
 
 # 图像填充边界 常用语卷积或0填充
 # 图像/上下左右高度/类型
-img = cv2.imread('image.jpg')
+img = cv2.imread('../src/image.jpg')
 # 重复最后一个元素           aaaaaa|abcdefgh|hhhhhhh
 replicate = cv2.copyMakeBorder(img, 20, 20, 20, 20, cv2.BORDER_REPLICATE)
 # 边界元素镜像(有边元素)      fedcba|abcdefgh|hgfedcb

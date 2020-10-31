@@ -8,7 +8,7 @@ from matplotlib import pyplot as plt
 Sobel, Scharr即求一阶或二阶导数, Scharr是对Sobel(使用小的卷积和求解梯度角度时的优化)
 Laplacian是求二阶导数
 """
-img = cv2.imread('yue_reverse.png', 0)
+img = cv2.imread('../src/yue_reverse.png', 0)
 """
 Sobel算子是高斯平滑与微分的结合, 抗噪能力强, 可设定求导方向和卷积核的大小(-1则使用3*3的Scharr,效果好于3*3Sobel)
 Laplacian算子使用二阶导数定义, 假设离散实现类似二阶Sobel导数

@@ -6,7 +6,7 @@ OTSU算法:
 在直方图的两个峰中需要阈值t, 将两峰分开, 并且使每一个峰内的方差最小
 """
 
-img = cv2.imread('coin_noise.jpg', 0)
+img = cv2.imread('../src/coin_noise.jpg', 0)
 
 ret1, th1 = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
 # otsu算法二值化, 返回值ret即为阈值

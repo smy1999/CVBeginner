@@ -1,7 +1,7 @@
 import cv2
 from matplotlib import pyplot as plt
 
-img = cv2.imread('image.jpg', 0)
+img = cv2.imread('../src/image.jpg', 0)
 
 # param : 图像/阈值/置于的量/方式
 # return: 阈值/新图像

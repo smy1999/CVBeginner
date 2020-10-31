@@ -10,9 +10,9 @@ import numpy as np
 """
 
 # resize使其可以被2整除
-apple = cv2.imread('apple.png')
+apple = cv2.imread('../src/apple.png')
 apple = cv2.resize(apple, (256, 256), interpolation=cv2.INTER_CUBIC)
-orange = cv2.imread('orange.png')
+orange = cv2.imread('../src/orange.png')
 orange = cv2.resize(orange, (256, 256), interpolation=cv2.INTER_CUBIC)
 
 # 生成2个Gaussian Pyramid

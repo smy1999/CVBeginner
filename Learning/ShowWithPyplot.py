@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 """
 
 # opencv加载BGR模式, matplotlib加载RGB模式, 若opencv读取彩色图像, 则matplotlib读取会有反色
-img = cv2.imread('image.jpg', 0)
+img = cv2.imread('../src/image.jpg', 0)
 # cmap : 将标量数据映射到色彩图
 # interpolation : 插值方法
 # bicubic 双三次插值

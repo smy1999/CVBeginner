@@ -6,7 +6,7 @@ cv2.warpAffine 接收尺寸为2*3的变换矩阵
 cv2.wartPerspective 接收尺寸为3*3的变换矩阵
 """
 
-img = cv2.imread('image.jpg')
+img = cv2.imread('../src/image.jpg')
 
 # 缩放
 # 法1. 图像/输出图像尺寸(None)/x轴缩放系数/y轴缩放系数/缩放因子
