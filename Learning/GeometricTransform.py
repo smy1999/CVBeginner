@@ -43,13 +43,9 @@ position_objective = np.float32([[0, 0], [300, 0], [0, 300], [300, 300]])
 Matrix = cv2.getPerspectiveTransform(position_original, position_objective)  # 构建变换矩阵
 res6 = cv2.warpPerspective(img, Matrix, (width, height))
 
-
-while True:
-    cv2.imshow('img', img)
-    cv2.imshow('res1', res6)
-    k = cv2.waitKey(0) & 0xFF
-    if k == 27:
-        break
+cv2.imshow('img', img)
+cv2.imshow('res1', res6)
+cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 """
