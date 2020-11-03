@@ -6,7 +6,7 @@ import cv2
 2D离散傅立叶变换DFT分析图像的频域特性, 实现的方法之一快速傅立叶变换FFT
 边界和噪声变化快,属于高频分量
 """
-img = cv2.imread('../src/desktop.jpg', 0)
+img = cv2.imread('../../src/desktop.jpg', 0)
 
 # 1.Numpy
 # 快速傅立叶变换, param:图像(gray)/输出数组大小(缺省与输入相同;若结果比输入大,输入图像在FFT前补0;反之输入图像被切割)
@@ -33,7 +33,7 @@ plt.subplot(224), plt.imshow(img_back), plt.title('Image in JET')
 plt.xticks([]), plt.yticks([])
 plt.show()
 
-# 2.cv2
+# 2.cv2(更快)
 dft = cv2.dft(np.float32(img), flags=cv2.DFT_COMPLEX_OUTPUT)  # 输入float32格式图像
 dft_shift = np.fft.fftshift(dft)
 # magnitude计算二维矢量的幅值, param: 实部/虚部
@@ -43,7 +43,7 @@ mask = np.zeros((row, column, 2), np.uint8)
 mask[row_half - 30: row_half + 30, column_half - 30: column_half + 30] = 1  # 掩模
 fourier_shift2 = mask * dft_shift
 fourier_ishift2 = np.fft.ifftshift(fourier_shift2)  # 反平移回左上角
-img_back2 = cv2.idft(fourier_shift2)  # 反变换
+img_back2 = cv2.idft(fourier_ishift2)  # 反变换
 img_back2 = cv2.magnitude(img_back2[:, :, 0], img_back2[:, :, 1])
 
 plt.subplot(221), plt.imshow(img, 'gray'), plt.title('Original Image')

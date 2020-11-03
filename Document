@@ -253,3 +253,16 @@ cv2.normalize()
 cv2.NORM_MINMAX
 cv2.calcBackProject()
 
+Fourier.py
+np.fft.fft2()
+np.fft.fftshift()
+np.fft.ifftshift()
+np.fft.ifft2()
+cv2.dft()
+cv2.DFT_COMPLEX_OUTPUT
+cv2.idft()
+cv2.magnitude()
+
+FourierOptimization.py
+cv2.getOptimalDFTSize()
+
