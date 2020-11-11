@@ -266,3 +266,14 @@ cv2.magnitude()
 FourierOptimization.py
 cv2.getOptimalDFTSize()
 
+KalmanFilter.py
+kalman = cv2.KalmanFilter()
+kalman.measurementMatrix
+kalman.transitionMatrix
+kalman.processNoiseCov
+kalman.measurementNoiseCov
+kalman.correct()
+kalman.predict()
+kalman.statePre
+kalman.statePost
+
